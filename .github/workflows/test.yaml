@@ -18,7 +18,7 @@ jobs:
 
       - name: Step 3 (Поработаем с переменными окружения)
         env:
-          MY_VAR: "example-value"
+          MY_VAR: ${{ secrets.PASSWORD }}
         run: |
           echo "MY_VAR is: $MY_VAR"
 
